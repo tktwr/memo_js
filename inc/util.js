@@ -73,6 +73,7 @@ function js_highlight() {
                                 .replace(/\bOK\b/g     , (match) => { return js_color('hi_green'   , match) })
                                 .replace(/\bCANCEL\b/g , (match) => { return js_color('hi_red'     , match) })
                                 .replace(/\bFAIL\b/g   , (match) => { return js_color('hi_red'     , match) })
+                                .replace(/\bWIP\b/g    , (match) => { return js_color('hi_purple'  , match) })
                                 .replace(/\bHIGH\b/g   , (match) => { return js_color('hi_red'     , match) })
                                 .replace(/\bMIDDLE\b/g , (match) => { return js_color('hi_yellow'  , match) })
                                 .replace(/\bLOW\b/g    , (match) => { return js_color('hi_green'   , match) })
