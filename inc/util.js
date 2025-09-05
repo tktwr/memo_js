@@ -88,6 +88,9 @@ function js_highlight() {
                                 .replace(/\b.NF.\b/g   , (match) => { return js_color('hi_green'   , match) })
                                 .replace(/\b.S.J\b/g   , (match) => { return js_color('hi_blue'    , match) })
                                 .replace(/\b.S.P\b/g   , (match) => { return js_color('hi_yellow'  , match) })
+                                .replace(/朝食/g       , (match) => { return js_color('hi_yellow'  , match) })
+                                .replace(/昼食/g       , (match) => { return js_color('hi_yellow'  , match) })
+                                .replace(/夕食/g       , (match) => { return js_color('hi_yellow'  , match) })
     ;
     document.body.innerHTML = updatedText;
   });

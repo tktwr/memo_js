@@ -14,6 +14,22 @@ body {
     column-gap: 3em;
 }
 
+@media print {
+  /* 章の先頭など、次の要素を新ページから開始 */
+  .pb { break-before: page; }
+
+  /* 念のため、空要素を使う場合に備えた安全策 */
+  .pagebreak {
+    break-before: page;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    line-height: 0 !important;
+  }
+}
+
+
 .hi_red     { color: #fb4934; font-weight: bold; }
 .hi_orange  { color: #fe8019; font-weight: bold; }
 .hi_yellow  { color: #fabd2f; font-weight: bold; }
